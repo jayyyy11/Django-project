@@ -1,0 +1,6 @@
+{% include 'base.html' %}
+{% block code %} 
+{% for object in object_list %} {% endfor %}
+ID	Name	Department	Year
+{{object.id}}	{{object.name}}	{{object.department}}	{{object.rollno}}
+{% endblock %}

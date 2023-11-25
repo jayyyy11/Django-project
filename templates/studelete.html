@@ -1,0 +1,17 @@
+{% include 'base.html' %}
+{% block code %} 
+{% include 'base.html' %}
+{% block code %} Student's page.
+{% csrf_token %}
+
+
+Are you sure you want to delete "{{ object }}"?
+
+
+
+
+Name	Department	Roll number
+{{object.name}}	{{object.department}}	{{object.rollno}} No
+{% endblock %}
+
+

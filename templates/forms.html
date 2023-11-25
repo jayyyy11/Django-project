@@ -1,0 +1,9 @@
+{% include 'base.html' %}
+{% block code %} 
+ 
+Student's Details Entry.
+
+
+
+{% csrf_token %} {{form.as_p}} 
+{% endblock %}
